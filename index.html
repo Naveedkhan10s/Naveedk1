@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveed Khan | LinkedIn & Digital Marketing Expert</title>
+    <meta name="description" content="Professional LinkedIn profile optimization, digital marketing, and content writing services for startups and small businesses. Schedule your free consultation today.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #2563eb;
+            --primary-blue-dark: #1d4ed8;
+            --primary-blue-light: #3b82f6;
+            --secondary-purple: #8b5cf6;
+            --secondary-pink: #ec4899;
+            --dark-bg: #0f172a;
+            --dark-card: #1e293b;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            --white: #ffffff;
+            --gradient-primary: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+            --gradient-secondary: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--gray-800);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--gray-900);
+        }
+
+        .gradient-text {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .btn-large {
+            padding: 16px 32px;
+            font-size: 18px;
+        }
+
+        .btn-full {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: var(--gray-700);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-blue);
+        }
+
+        .btn-nav {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--gray-800);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #f9fafb 0%, #e0e7ff 100%);
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary-blue);
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .hero-title {
+            font-size: 56px;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            color: var(--gray-900);
+        }
+
+        .hero-description {
+            font-size: 20px;
+            color: var(--gray-700);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--gray-700);
+        }
+
+        .hero-visual {
+            position: relative;
+            height: 600px;
+        }
+
+        #hero3d {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray-700);
+            font-size: 14px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translate(-50%, 0); }
+            50% { transform: translate(-50%, 10px); }
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 64px;
+        }
+
+        .section-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary-blue);
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: 48px;
+            margin-bottom: 16px;
+            color: var(--gray-900);
+        }
+
+        .section-description {
+            font-size: 18px;
+            color: var(--gray-700);
+            line-height: 1.6;
+        }
+
+        .services {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 16px;
+            padding: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+            border-color: var(--primary-blue);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 24px;
+        }
+
+        .service-3d {
+            width: 100%;
+            height: 100%;
+        }
+
+        .service-title {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: var(--gray-900);
+        }
+
+        .service-description {
+            font-size: 16px;
+            color: var(--gray-700);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            color: var(--gray-700);
+            position: relative;
+            padding-left: 28px;
+        }
+
+        .service-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        .service-benefit {
+            padding: 16px;
+            background: var(--gray-50);
+            border-radius: 8px;
+            font-size: 14px;
+            color: var(--gray-700);
+        }
+
+        .service-benefit strong {
+            color: var(--primary-blue);
+        }
+
+        .about {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #f9fafb 0%, #e0e7ff 100%);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .about-visual {
+            height: 500px;
+        }
+
+        #about3d {
+            width: 100%;
+            height: 100%;
+        }
+
+        .about-content .section-badge {
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .about-content .section-title {
+            text-align: left;
+            font-size: 42px;
+            margin-bottom: 24px;
+        }
+
+        .about-text {
+            font-size: 16px;
+            color: var(--gray-700);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .about-highlights {
+            margin: 32px 0;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: var(--gray-700);
+        }
+
+        .highlight-item svg {
+            color: var(--primary-blue);
+            flex-shrink: 0;
+        }
+
+        .portfolio {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            gap: 48px;
+        }
+
+        .case-study {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            padding: 48px;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .case-study:hover {
+            box-shadow: var(--shadow-2xl);
+            transform: translateY(-4px);
+        }
+
+        .case-study-visual {
+            height: 300px;
+        }
+
+        .case-study-3d {
+            width: 100%;
+            height: 100%;
+        }
+
+        .case-study-tag {
+            display: inline-block;
+            padding: 6px 12px;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary-blue);
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .case-study-title {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .case-study-description {
+            font-size: 16px;
+            color: var(--gray-700);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .case-study-metrics {
+            display: flex;
+            gap: 40px;
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 32px;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .metric-label {
+            font-size: 14px;
+            color: var(--gray-700);
+        }
+
+        .download {
+            padding: 120px 0;
+            background: var(--dark-bg);
+        }
+
+        .download-card {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 64px;
+            align-items: center;
+            background: var(--dark-card);
+            border-radius: 24px;
+            padding: 64px;
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .download-visual {
+            height: 400px;
+        }
+
+        #download3d {
+            width: 100%;
+            height: 100%;
+        }
+
+        .download-title {
+            font-size: 36px;
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+
+        .download-description {
+            font-size: 16px;
+            color: var(--gray-300);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .download-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .download-features li {
+            padding: 10px 0;
+            color: var(--gray-300);
+            position: relative;
+            padding-left: 28px;
+        }
+
+        .download-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue-light);
+            font-weight: bold;
+        }
+
+        .download-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .download-form input {
+            padding: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--white);
+            font-size: 16px;
+        }
+
+        .download-form input::placeholder {
+            color: var(--gray-300);
+        }
+
+        .download-privacy {
+            font-size: 12px;
+            color: var(--gray-300);
+            margin-top: 8px;
+        }
+
+        .contact {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 64px;
+        }
+
+        .contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            color: var(--gray-700);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            background: var(--gray-50);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            background: var(--gray-100);
+            transform: translateX(8px);
+        }
+
+        .method-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            color: var(--white);
+        }
+
+        .method-icon.whatsapp {
+            background: #25D366;
+        }
+
+        .method-icon.linkedin {
+            background: #0077b5;
+        }
+
+        .method-details {
+            flex: 1;
+        }
+
+        .method-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--gray-900);
+        }
+
+        .method-value {
+            font-size: 14px;
+            color: var(--gray-700);
+        }
+
+        .contact-hours {
+            padding: 24px;
+            background: var(--gray-50);
+            border-radius: 12px;
+        }
+
+        .contact-hours h4 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .contact-hours p {
+            font-size: 14px;
+            color: var(--gray-700);
+            margin-bottom: 8px;
+        }
+
+        .contact-form-container {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 16px;
+            padding: 40px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--gray-900);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 14px;
+            border: 1px solid var(--gray-300);
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .footer {
+            background: var(--dark-bg);
+            color: var(--gray-300);
+            padding: 64px 0 32px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 64px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand .logo-text {
+            font-size: 28px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-links h4,
+        .footer-services h4 {
+            color: var(--white);
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .footer-links ul,
+        .footer-services ul {
+            list-style: none;
+        }
+
+        .footer-links li,
+        .footer-services li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--gray-300);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-services li {
+            font-size: 14px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 32px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 48px;
+            }
+            
+            .section-title {
+                font-size: 40px;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--white);
+                flex-direction: column;
+                padding: 40px;
+                transition: left 0.3s ease;
+                box-shadow: var(--shadow-lg);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-toggle {
+                display: flex;
+            }
+            
+            .hero-container,
+            .about-grid,
+            .contact-grid,
+            .download-card {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .section-title {
+                font-size: 32px;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+            }
+            
+            .hero-stats {
+                gap: 32px;
+            }
+            
+            .case-study {
+                grid-template-columns: 1fr;
+                padding: 32px;
+            }
+            
+            .case-study-metrics {
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 28px;
+            }
+            
+            .btn-large {
+                padding: 14px 24px;
+                font-size: 16px;
+            }
+            
+            .stat-number {
+                font-size: 28px;
+            }
+            
+            .download-card {
+                padding: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">Naveed Khan</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary btn-nav">Schedule Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Professional Digital Marketing Expert</div>
+                <h1 class="hero-title">
+                    Transform Your LinkedIn Presence & 
+                    <span class="gradient-text">Elevate Your Digital Brand</span>
+                </h1>
+                <p class="hero-description">
+                    I help startups and small businesses build powerful online identities through expert LinkedIn optimization, strategic content creation, and data-driven digital marketing.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Schedule Free Consultation
+                    </a>
+                    <a href="#download" class="btn btn-secondary btn-large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Strategy Template
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Profiles Optimized</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Engagement Increase</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <canvas id="hero3d"></canvas>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What I Offer</span>
+                <h2 class="section-title">Comprehensive Digital Marketing Services</h2>
+                <p class="section-description">
+                    Tailored solutions designed specifically for startups and small businesses looking to make a powerful impact online.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <canvas class="service-3d" data-shape="sphere" data-color="#3b82f6"></canvas>
+                    </div>
+                    <h3 class="service-title">LinkedIn Profile Optimization</h3>
+                    <p class="service-description">
+                        Transform your LinkedIn profile into a powerful personal brand that attracts opportunities, clients, and connections.
+                    </p>
+                    <ul class="service-features">
+                        <li>Complete profile audit and strategy</li>
+                        <li>Compelling headline and summary creation</li>
+                        <li>Keyword optimization for searchability</li>
+                        <li>Visual branding and banner design</li>
+                        <li>Recommendations strategy</li>
+                    </ul>
+                    <div class="service-benefit">
+                        <strong>Perfect for:</strong> Entrepreneurs, executives, and job seekers wanting to stand out
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <canvas class="service-3d" data-shape="cube" data-color="#8b5cf6"></canvas>
+                    </div>
+                    <h3 class="service-title">Digital Marketing Services</h3>
+                    <p class="service-description">
+                        Strategic digital marketing campaigns that drive real results and ROI for your business.
+                    </p>
+                    <ul class="service-features">
+                        <li>Social media strategy and management</li>
+                        <li>Email marketing campaigns</li>
+                        <li>Paid advertising consultation</li>
+                        <li>Analytics and performance tracking</li>
+                        <li>Brand positioning and messaging</li>
+                    </ul>
+                    <div class="service-benefit">
+                        <strong>Perfect for:</strong> Startups launching products and businesses scaling their reach
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <canvas class="service-3d" data-shape="pyramid" data-color="#ec4899"></canvas>
+                    </div>
+                    <h3 class="service-title">Content Writing Services</h3>
+                    <p class="service-description">
+                        Engaging, persuasive content that tells your brand story and converts readers into customers.
+                    </p>
+                    <ul class="service-features">
+                        <li>Blog posts and articles</li>
+                        <li>LinkedIn posts and thought leadership</li>
+                        <li>Case studies and whitepapers</li>
+                        <li>Email newsletters</li>
+                        <li>Brand storytelling</li>
+                    </ul>
+                    <div class="service-benefit">
+                        <strong>Perfect for:</strong> Businesses needing consistent, high-quality content
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <canvas class="service-3d" data-shape="torus" data-color="#10b981"></canvas>
+                    </div>
+                    <h3 class="service-title">SEO Content Creation</h3>
+                    <p class="service-description">
+                        Search-optimized content that ranks on Google and drives organic traffic to your website.
+                    </p>
+                    <ul class="service-features">
+                        <li>Keyword research and strategy</li>
+                        <li>SEO-optimized blog posts</li>
+                        <li>Meta descriptions and title tags</li>
+                        <li>Content optimization audits</li>
+                        <li>Competitor analysis</li>
+                    </ul>
+                    <div class="service-benefit">
+                        <strong>Perfect for:</strong> Businesses wanting to increase organic search visibility
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <canvas class="service-3d" data-shape="octahedron" data-color="#f59e0b"></canvas>
+                    </div>
+                    <h3 class="service-title">Web Page Content</h3>
+                    <p class="service-description">
+                        Conversion-focused website copy that clearly communicates your value and drives action.
+                    </p>
+                    <ul class="service-features">
+                        <li>Homepage and landing page copy</li>
+                        <li>About and services pages</li>
+                        <li>Product descriptions</li>
+                        <li>Call-to-action optimization</li>
+                        <li>Brand voice development</li>
+                    </ul>
+                    <div class="service-benefit">
+                        <strong>Perfect for:</strong> Startups launching websites and businesses rebranding
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <canvas id="about3d"></canvas>
+                </div>
+                <div class="about-content">
+                    <span class="section-badge">About Me</span>
+                    <h2 class="section-title">Your Partner in Digital Growth</h2>
+                    <p class="about-text">
+                        With years of experience in digital marketing and content strategy, I've helped over 150 startups and small businesses transform their online presence and achieve measurable growth.
+                    </p>
+                    <p class="about-text">
+                        I understand the unique challenges that startups and small business owners face—limited budgets, time constraints, and the need for immediate results. That's why I've developed a streamlined approach that delivers maximum impact without the enterprise price tag.
+                    </p>
+                    <p class="about-text">
+                        My expertise spans LinkedIn optimization, where I've helped professionals increase their profile views by up to 300%, strategic content creation that drives engagement, and SEO strategies that put small businesses on the first page of Google.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Certified Digital Marketing Professional</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>LinkedIn Content Strategy Specialist</span>
+                        </div>
+                        <div class="highlight-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>SEO & Content Marketing Expert</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Success Stories</span>
+                <h2 class="section-title">Real Results for Real Businesses</h2>
+                <p class="section-description">
+                    See how I've helped startups and small businesses achieve their digital marketing goals.
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="case-study">
+                    <div class="case-study-visual">
+                        <canvas class="case-study-3d" data-color="#3b82f6"></canvas>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-study-tag">LinkedIn Optimization</div>
+                        <h3 class="case-study-title">Tech Startup Founder</h3>
+                        <p class="case-study-description">
+                            Transformed a founder's LinkedIn profile from generic to magnetic, resulting in 5x more connection requests and 3 partnership opportunities in 60 days.
+                        </p>
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <div class="metric-value">+420%</div>
+                                <div class="metric-label">Profile Views</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">5x</div>
+                                <div class="metric-label">Connections</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">3</div>
+                                <div class="metric-label">Partnerships</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <div class="case-study-visual">
+                        <canvas class="case-study-3d" data-color="#8b5cf6"></canvas>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-study-tag">Content Strategy</div>
+                        <h3 class="case-study-title">E-commerce Brand</h3>
+                        <p class="case-study-description">
+                            Developed a comprehensive content strategy that increased organic traffic by 285% and generated 40+ qualified leads per month.
+                        </p>
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <div class="metric-value">+285%</div>
+                                <div class="metric-label">Organic Traffic</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">40+</div>
+                                <div class="metric-label">Monthly Leads</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">3.2x</div>
+                                <div class="metric-label">Engagement</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study">
+                    <div class="case-study-visual">
+                        <canvas class="case-study-3d" data-color="#ec4899"></canvas>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-study-tag">SEO Content</div>
+                        <h3 class="case-study-title">SaaS Startup</h3>
+                        <p class="case-study-description">
+                            Created SEO-optimized blog content that ranked for 25+ keywords in the top 10 Google results, driving consistent qualified traffic.
+                        </p>
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <div class="metric-value">25+</div>
+                                <div class="metric-label">Top 10 Rankings</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">+350%</div>
+                                <div class="metric-label">Search Traffic</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">12</div>
+                                <div class="metric-label">New Customers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-visual">
+                    <canvas id="download3d"></canvas>
+                </div>
+                <div class="download-content">
+                    <h2 class="download-title">Free Content Strategy Template</h2>
+                    <p class="download-description">
+                        Get my proven content strategy framework that's helped 100+ businesses create engaging content that converts. This comprehensive template includes:
+                    </p>
+                    <ul class="download-features">
+                        <li>30-day content calendar framework</li>
+                        <li>Audience persona worksheets</li>
+                        <li>Content pillar strategy guide</li>
+                        <li>LinkedIn posting best practices</li>
+                        <li>Performance tracking templates</li>
+                    </ul>
+                    <form class="download-form" id="downloadForm">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Free Template
+                        </button>
+                    </form>
+                    <p class="download-privacy">Your email is safe. No spam, only valuable marketing insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's Start Your Digital Transformation</h2>
+                <p class="section-description">
+                    Schedule a free 30-minute consultation to discuss your goals and how I can help you achieve them.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Ready to Elevate Your Brand?</h3>
+                    <p>
+                        Whether you need a LinkedIn profile makeover, a comprehensive content strategy, or ongoing digital marketing support, I'm here to help your business grow.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <a href="https://wa.me/1234567890" target="_blank" class="contact-method">
+                            <div class="method-icon whatsapp">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <div class="method-label">WhatsApp</div>
+                                <div class="method-value">Chat with me instantly</div>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/naveedkhan" target="_blank" class="contact-method">
+                            <div class="method-icon linkedin">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <div class="method-label">LinkedIn</div>
+                                <div class="method-value">Connect professionally</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-hours">
+                        <h4>Availability</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Response time: Within 24 hours</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="linkedin">LinkedIn Profile Optimization</option>
+                                <option value="digital">Digital Marketing Services</option>
+                                <option value="content">Content Writing Services</option>
+                                <option value="seo">SEO Content</option>
+                                <option value="web">Web Page Content</option>
+                                <option value="multiple">Multiple Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell Me About Your Goals *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            Schedule Free Consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-text">Naveed Khan</div>
+                    <p>Transforming brands through strategic LinkedIn optimization and digital marketing excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>LinkedIn Optimization</li>
+                        <li>Digital Marketing</li>
+                        <li>Content Writing</li>
+                        <li>SEO Content</li>
+                        <li>Web Page Content</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Naveed Khan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation
+        const navbar = document.getElementById('navbar');
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 3D Canvas Class
+        class Canvas3D {
+            constructor(canvas, config = {}) {
+                this.canvas = canvas;
+                this.ctx = canvas.getContext('2d');
+                this.config = {
+                    type: config.type || 'sphere',
+                    color: config.color || '#3b82f6',
+                    rotationSpeed: config.rotationSpeed || 0.005,
+                    particleCount: config.particleCount || 100,
+                    ...config
+                };
+                this.time = 0;
+                this.resize();
+                this.init();
+                this.animate();
+                
+                window.addEventListener('resize', () => this.resize());
+            }
+
+            resize() {
+                const rect = this.canvas.getBoundingClientRect();
+                this.canvas.width = rect.width * window.devicePixelRatio;
+                this.canvas.height = rect.height * window.devicePixelRatio;
+                this.ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+                this.width = rect.width;
+                this.height = rect.height;
+            }
+
+            init() {
+                this.particles = [];
+                const count = this.config.particleCount;
+                
+                for (let i = 0; i < count; i++) {
+                    this.particles.push({
+                        angle1: Math.random() * Math.PI * 2,
+                        angle2: Math.random() * Math.PI * 2,
+                        radius: Math.random() * 0.5 + 0.5,
+                        speed: Math.random() * 0.02 + 0.01
+                    });
+                }
+            }
+
+            drawSphere() {
+                const centerX = this.width / 2;
+                const centerY = this.height / 2;
+                const radius = Math.min(this.width, this.height) * 0.35;
+
+                this.particles.forEach(p => {
+                    const x = centerX + Math.cos(p.angle1 + this.time) * Math.sin(p.angle2) * radius * p.radius;
+                    const y = centerY + Math.sin(p.angle1 + this.time) * Math.sin(p.angle2) * radius * p.radius;
+                    const z = Math.cos(p.angle2) * radius * p.radius;
+                    
+                    const scale = (z + radius) / (2 * radius);
+                    const size = 2 + scale * 3;
+                    const opacity = 0.3 + scale * 0.7;
+
+                    this.ctx.fillStyle = this.hexToRgba(this.config.color, opacity);
+                    this.ctx.beginPath();
+                    this.ctx.arc(x, y, size, 0, Math.PI * 2);
+                    this.ctx.fill();
+                });
+            }
+
+            drawCube() {
+                const centerX = this.width / 2;
+                const centerY = this.height / 2;
+                const size = Math.min(this.width, this.height) * 0.3;
+
+                const vertices = [
+                    [-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1],
+                    [-1, -1, 1], [1, -1, 1], [1, 1, 1], [-1, 1, 1]
+                ];
+
+                const edges = [
+                    [0, 1], [1, 2], [2, 3], [3, 0],
+                    [4, 5], [5, 6], [6, 7], [7, 4],
+                    [0, 4], [1, 5], [2, 6], [3, 7]
+                ];
+
+                const rotated = vertices.map(v => this.rotate3D(v, this.time, this.time * 0.7));
+                
+                edges.forEach(([a, b]) => {
+                    const [x1, y1, z1] = rotated[a];
+                    const [x2, y2, z2] = rotated[b];
+                    
+                    const scale1 = 1 / (1 + z1 * 0.5);
+                    const scale2 = 1 / (1 + z2 * 0.5);
+                    
+                    this.ctx.strokeStyle = this.config.color;
+                    this.ctx.lineWidth = 3;
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(centerX + x1 * size * scale1, centerY + y1 * size * scale1);
+                    this.ctx.lineTo(centerX + x2 * size * scale2, centerY + y2 * size * scale2);
+                    this.ctx.stroke();
+                });
+            }
+
+            drawPyramid() {
+                const centerX = this.width / 2;
+                const centerY = this.height / 2;
+                const size = Math.min(this.width, this.height) * 0.3;
+
+                const vertices = [
+                    [0, -1.5, 0],
+                    [-1, 0.5, -1],
+                    [1, 0.5, -1],
+                    [1, 0.5, 1],
+                    [-1, 0.5, 1]
+                ];
+
+                const edges = [
+                    [0, 1], [0, 2], [0, 3], [0, 4],
+                    [1, 2], [2, 3], [3, 4], [4, 1]
+                ];
+
+                const rotated = vertices.map(v => this.rotate3D(v, this.time, this.time * 0.8));
+                
+                edges.forEach(([a, b]) => {
+                    const [x1, y1, z1] = rotated[a];
+                    const [x2, y2, z2] = rotated[b];
+                    
+                    const scale1 = 1 / (1 + z1 * 0.5);
+                    const scale2 = 1 / (1 + z2 * 0.5);
+                    
+                    this.ctx.strokeStyle = this.config.color;
+                    this.ctx.lineWidth = 3;
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(centerX + x1 * size * scale1, centerY + y1 * size * scale1);
+                    this.ctx.lineTo(centerX + x2 * size * scale2, centerY + y2 * size * scale2);
+                    this.ctx.stroke();
+                });
+            }
+
+            drawTorus() {
+                const centerX = this.width / 2;
+                const centerY = this.height / 2;
+                const majorRadius = Math.min(this.width, this.height) * 0.25;
+                const minorRadius = majorRadius * 0.3;
+
+                for (let i = 0; i < this.config.particleCount; i++) {
+                    const u = (i / this.config.particleCount) * Math.PI * 2;
+                    const v = this.time + i * 0.1;
+                    
+                    const x = (majorRadius + minorRadius * Math.cos(v)) * Math.cos(u);
+                    const y = (majorRadius + minorRadius * Math.cos(v)) * Math.sin(u);
+                    const z = minorRadius * Math.sin(v);
+                    
+                    const rotated = this.rotate3D([x, y, z], this.time * 0.5, this.time * 0.7);
+                    const scale = 1 / (1 + rotated[2] * 0.003);
+                    
+                    const screenX = centerX + rotated[0] * scale;
+                    const screenY = centerY + rotated[1] * scale;
+                    const size = 2 + scale * 2;
+                    
+                    this.ctx.fillStyle = this.config.color;
+                    this.ctx.beginPath();
+                    this.ctx.arc(screenX, screenY, size, 0, Math.PI * 2);
+                    this.ctx.fill();
+                }
+            }
+
+            drawOctahedron() {
+                const centerX = this.width / 2;
+                const centerY = this.height / 2;
+                const size = Math.min(this.width, this.height) * 0.3;
+
+                const vertices = [
+                    [0, 1, 0],
+                    [1, 0, 0], [0, 0, 1], [-1, 0, 0], [0, 0, -1],
+                    [0, -1, 0]
+                ];
+
+                const edges = [
+                    [0, 1], [0, 2], [0, 3], [0, 4],
+                    [5, 1], [5, 2], [5, 3], [5, 4],
+                    [1, 2], [2, 3], [3, 4], [4, 1]
+                ];
+
+                const rotated = vertices.map(v => this.rotate3D(v, this.time, this.time * 0.9));
+                
+                edges.forEach(([a, b]) => {
+                    const [x1, y1, z1] = rotated[a];
+                    const [x2, y2, z2] = rotated[b];
+                    
+                    const scale1 = 1 / (1 + z1 * 0.5);
+                    const scale2 = 1 / (1 + z2 * 0.5);
+                    
+                    this.ctx.strokeStyle = this.config.color;
+                    this.ctx.lineWidth = 3;
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(centerX + x1 * size * scale1, centerY + y1 * size * scale1);
+                    this.ctx.lineTo(centerX + x2 * size * scale2, centerY + y2 * size * scale2);
+                    this.ctx.stroke();
+                });
+            }
+
+            drawNetwork() {
+                const centerX = this.width / 2;
+                const centerY = this.height / 2;
+                const radius = Math.min(this.width, this.height) * 0.35;
+
+                this.particles.forEach((p, i) => {
+                    const angle = (i / this.particles.length) * Math.PI * 2 + this.time;
+                    const x = centerX + Math.cos(angle) * radius * (0.8 + Math.sin(this.time + i) * 0.2);
+                    const y = centerY + Math.sin(angle) * radius * (0.8 + Math.cos(this.time + i) * 0.2);
+                    
+                    this.ctx.fillStyle = this.config.color;
+                    this.ctx.beginPath();
+                    this.ctx.arc(x, y, 4, 0, Math.PI * 2);
+                    this.ctx.fill();
+
+                    this.particles.forEach((p2, j) => {
+                        if (j > i && Math.random() > 0.7) {
+                            const angle2 = (j / this.particles.length) * Math.PI * 2 + this.time;
+                            const x2 = centerX + Math.cos(angle2) * radius * (0.8 + Math.sin(this.time + j) * 0.2);
+                            const y2 = centerY + Math.sin(angle2) * radius * (0.8 + Math.cos(this.time + j) * 0.2);
+                            
+                            this.ctx.strokeStyle = this.hexToRgba(this.config.color, 0.2);
+                            this.ctx.lineWidth = 1;
+                            this.ctx.beginPath();
+                            this.ctx.moveTo(x, y);
+                            this.ctx.lineTo(x2, y2);
+                            this.ctx.stroke();
+                        }
+                    });
+                });
+            }
+
+            rotate3D(point, angleX, angleY) {
+                let [x, y, z] = point;
+                
+                let y1 = y * Math.cos(angleX) - z * Math.sin(angleX);
+                let z1 = y * Math.sin(angleX) + z * Math.cos(angleX);
+                
+                let x2 = x * Math.cos(angleY) + z1 * Math.sin(angleY);
+                let z2 = -x * Math.sin(angleY) + z1 * Math.cos(angleY);
+                
+                return [x2, y1, z2];
+            }
+
+            hexToRgba(hex, alpha) {
+                const r = parseInt(hex.slice(1, 3), 16);
+                const g = parseInt(hex.slice(3, 5), 16);
+                const b = parseInt(hex.slice(5, 7), 16);
+                return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+            }
+
+            animate() {
+                this.ctx.clearRect(0, 0, this.width, this.height);
+                
+                switch(this.config.type) {
+                    case 'sphere':
+                        this.drawSphere();
+                        break;
+                    case 'cube':
+                        this.drawCube();
+                        break;
+                    case 'pyramid':
+                        this.drawPyramid();
+                        break;
+                    case 'torus':
+                        this.drawTorus();
+                        break;
+                    case 'octahedron':
+                        this.drawOctahedron();
+                        break;
+                    case 'network':
+                        this.drawNetwork();
+                        break;
+                }
+                
+                this.time += this.config.rotationSpeed;
+                requestAnimationFrame(() => this.animate());
+            }
+        }
+
+        // Initialize 3D Canvases
+        document.addEventListener('DOMContentLoaded', () => {
+            const hero3d = document.getElementById('hero3d');
+            if (hero3d) {
+                new Canvas3D(hero3d, {
+                    type: 'network',
+                    color: '#3b82f6',
+                    rotationSpeed: 0.003,
+                    particleCount: 40
+                });
+            }
+
+            const about3d = document.getElementById('about3d');
+            if (about3d) {
+                new Canvas3D(about3d, {
+                    type: 'sphere',
+                    color: '#8b5cf6',
+                    rotationSpeed: 0.004,
+                    particleCount: 150
+                });
+            }
+
+            const download3d = document.getElementById('download3d');
+            if (download3d) {
+                new Canvas3D(download3d, {
+                    type: 'torus',
+                    color: '#ec4899',
+                    rotationSpeed: 0.005,
+                    particleCount: 80
+                });
+            }
+
+            document.querySelectorAll('.service-3d').forEach(canvas => {
+                const shape = canvas.dataset.shape;
+                const color = canvas.dataset.color;
+                
+                new Canvas3D(canvas, {
+                    type: shape,
+                    color: color,
+                    rotationSpeed: 0.006,
+                    particleCount: shape === 'sphere' ? 80 : 50
+                });
+            });
+
+            document.querySelectorAll('.case-study-3d').forEach(canvas => {
+                const color = canvas.dataset.color || '#3b82f6';
+                new Canvas3D(canvas, {
+                    type: 'cube',
+                    color: color,
+                    rotationSpeed: 0.005,
+                    particleCount: 60
+                });
+            });
+        });
+
+        // Form Handling
+        const contactForm = document.getElementById('contactForm');
+        const downloadForm = document.getElementById('downloadForm');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                alert('Thank you for your message! I will get back to you within 24 hours.');
+                contactForm.reset();
+            });
+        }
+
+        if (downloadForm) {
+            downloadForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                alert('Success! Check your email for the Content Strategy Template download link.');
+                downloadForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
